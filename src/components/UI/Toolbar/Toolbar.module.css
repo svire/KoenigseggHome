@@ -1,0 +1,67 @@
+.Header {
+  background-color: #1d1e31;
+  height: 85px;
+  width: 100%;
+  position: fixed; /*  zbog ovoga ti paragraf ode iza */
+  top: 0;
+  left: 0;
+}
+
+.Navbar {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.Logo {
+  margin-left: 15px;
+  font-size: 2rem;
+}
+
+.Logoa {
+  color: aliceblue;
+  text-decoration: none;
+  font-family: "Special Elite", cursive;
+}
+
+.NavigationItems {
+  margin: 0;
+}
+
+.NavigationItems ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.NavigationItems li {
+  padding: 0 0.7rem;
+}
+
+.Space {
+  flex: 1;
+}
+
+/*   links change color */
+.NavigationItems a {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 769px) {
+  .NavigationItems {
+    display: none;
+  }
+}
+/* to make button invisible in desktop mode and big screens*/
+@media (min-width: 769px) {
+  .DivToggler {
+    display: none;
+  }
+  /* if we dont have a button i doesnt need a margin*/
+  .Logo {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,17 @@
+.ButtonTr {
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: transparent;
+  border-radius: 4px;
+  width: auto;
+  height: auto;
+  padding: 12px 35px;
+  line-height: 17px;
+  font-size: 17px;
+  letter-spacing: 0.2rem !important;
+}
+
+.ButtonTr:hover {
+  background-color: #fff;
+  color: #000;
+}

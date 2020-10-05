@@ -1,0 +1,106 @@
+.SideDrawer {
+  height: 100%;
+  width: 60%;
+  max-width: 400px;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: rgba(51, 51, 51);
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+  z-index: 200;
+  transform: translateX(-100%);
+  /* ako nije otvoren side drawer default */
+  transition: transform 0.3s ease-out; /* animacija za transform kad se otvara */
+  padding: 0px;
+}
+
+.NavigationItems {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: stretch;
+}
+
+.SideLista ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 2px groove rgb(84, 79, 79);
+}
+
+.SideLista ul li {
+  /* border-top: 5px groove rgb(84, 79, 79); */
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 1px groove rgb(84, 79, 79);
+}
+.SideLista ul li {
+  /* border-top: 5px groove rgb(84, 79, 79); */
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 1px groove rgb(84, 79, 79);
+}
+.Inside {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 1px groove rgb(84, 79, 79);
+}
+
+.Link {
+  align-self: center;
+  margin-left: 20px;
+}
+
+.Subbutton {
+  float: right;
+  width: 60px;
+  display: flex;
+  padding-top: 15px;
+  background-color: rgb(35, 32, 32);
+  color: #fff;
+  justify-content: center;
+  /* text-align: center; */
+}
+.Subbutton:hover {
+  background-color: rgb(60, 56, 56);
+}
+
+.SideDrawer ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+}
+
+.Logo {
+  height: 150px;
+  text-align: center;
+}
+
+.LogoWhite {
+  width: 128px;
+  height: 128px;
+  object-fit: contain;
+}
+
+.Open {
+  transform: translateX(0%); /* da bude vidljiv */
+}
+
+@media (min-width: 769px) {
+  .SideDrawer {
+    display: none;
+  }
+}
+
+.Drawer {
+  margin: 2px;
+  width: 98%;
+  height: 30px;
+}

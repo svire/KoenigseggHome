@@ -1,0 +1,163 @@
+.Nav {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.Navigation {
+  display: flex;
+  flex-grow: flex wrap;
+  list-style: none;
+  background-color: rgb(0, 0, 0);
+  z-index: 200;
+}
+
+ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 1;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+.Logo {
+  width: 270px;
+  height: 100%;
+}
+.Toogle {
+  display: flex;
+  width: 100px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.Sliba {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.Navigation a {
+  text-decoration: none; /* da nema underline */
+  /* display a  elements as block elements: a, span su inline  https://www.w3schools.com/css/tryit.asp?filename=trycss_display_block_a */
+  padding: 1em;
+  color: #fff;
+  display: block;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.2rem;
+  white-space: nowrap;
+}
+
+.Navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  z-index: 1;
+}
+
+.Navigation ul li {
+  width: auto;
+  min-width: 300px;
+}
+
+.Navigation ul li a {
+  color: #000;
+  font-size: 14px;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-weight: 500;
+  letter-spacing: 0.15rem;
+  vertical-align: middle;
+}
+.Navigation ul li a:hover {
+  font-size: 14px;
+  font-weight: 700;
+}
+.Navigation ul li a:hover::before {
+  content: "• \00a0 \00a0 ";
+  font-size: 27px;
+  white-space: pre;
+}
+
+.Navigation li {
+  color: #000;
+}
+.Navigation a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+@media all and (min-width: 700px) {
+  .Toogle {
+    display: none;
+  }
+}
+
+@media all and (max-width: 701px) {
+  .Navigation {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    display: none;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .Navigation {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .Navigation {
+    display: none;
+  }
+  .Nav {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    justify-content: space-between;
+  }
+
+  .Logo {
+    margin-left: 20px;
+    width: 200px;
+    height: 80%;
+  }
+  .Sliba {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .Toogle {
+    margin-right: 20px;
+    display: inline-flex;
+  }
+}
+
+/* Small screens  
+  @media all and (max-width: 500px) {
+    .navigation {
+      /* On small screens, we are no longer using row direction but column  
+      flex-direction: column;
+    }
+  }
+  */

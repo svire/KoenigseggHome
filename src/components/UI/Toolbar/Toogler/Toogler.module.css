@@ -1,0 +1,26 @@
+.Buttone {
+  display: flex;
+  flex-direction: column; /* default is row, but i wanna place them under each other not BY EACH other */
+  justify-content: space-around; /* space-between;  free space will be distributed between three lines */
+  /* if we wanna add lines fires of all OVO GORE!  */
+  height: 30px;
+  width: 40px;
+  background-color: transparent;
+  border: none;
+  /* border-radius: 10px;
+    border: 1px dotted white; */
+  cursor: pointer;
+  padding: 0; /* da ponisti default padding */
+  box-sizing: border-box; /* da sva tri budu unutar batona */
+}
+
+.Buttone:focus {
+  outline: none; /* kad ga stisnes da se oko njega ne stvara kocka */
+}
+
+.Line {
+  height: 2px;
+  width: 30px;
+  background-color: white;
+  /*  margin-top: 4px;  ovo  ne treba jer sad ima justify-content: space-beetween; */
+}

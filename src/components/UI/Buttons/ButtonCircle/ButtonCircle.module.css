@@ -1,0 +1,18 @@
+.ButtonCircle {
+  z-index: 100;
+  width: 50px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: black;
+  margin-left: 30px;
+  opacity: 60%;
+  margin: 0 30px;
+  font-size: 25px;
+  color: bisque;
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+.ButtonCircle:hover {
+  opacity: 80%;
+}

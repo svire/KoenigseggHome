@@ -1,0 +1,43 @@
+.Container {
+  display: grid;
+  grid-template-columns: 150px auto 150px;
+  grid-template-rows: 100px auto auto; /*100px */
+  grid-template-areas:
+    "header header header"
+    "main main main" /* . sidebar empty area  */
+    "footer footer footer";
+}
+
+@media (max-width: 500px) {
+  .Container {
+    display: grid;
+    grid-template-columns: 20px auto 20px;
+    grid-template-rows: 70px auto 100px;
+    grid-template-areas:
+      "header header header"
+      "main main main"
+      "footer footer footer";
+  }
+}
+
+.Second {
+  display: grid;
+  grid-area: main;
+  min-height: 300px;
+  z-index: 23;
+}
+
+.Second p {
+  color: wheat;
+}
+.Header {
+  grid-area: header;
+  background-color: rgb(14, 9, 5);
+  z-index: 24;
+}
+
+.Footer {
+  grid-area: footer;
+  background-color: rgb(14, 9, 5);
+  z-index: 24;
+}

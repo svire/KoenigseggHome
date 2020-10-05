@@ -1,0 +1,95 @@
+.CarsContainer {
+  justify-content: center;
+}
+
+@media (min-width: 500px) {
+  .CarsContainer h1 {
+    font-size: 19px;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 1.3rem;
+    margin-top: 3rem !important;
+    margin-bottom: 1rem !important;
+  }
+  .ImageContainer {
+    margin: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-content: center;
+    align-items: stretch;
+  }
+  .Img {
+    height: 250px;
+  }
+}
+
+.Img {
+  opacity: 50%;
+}
+.Img:hover {
+  opacity: 100%;
+}
+/* iphone 5 */
+@media (max-width: 351px) {
+  .CarsContainer {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .CarsContainer h1 {
+    font-size: 10px;
+    text-align: center;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: lowercase;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    margin-top: 0.5rem !important;
+    margin-bottom: 2rem !important;
+  }
+  .ImageContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+  .Img {
+    height: 150px;
+  }
+}
+
+@media (max-width: 850px) {
+  .CarsContainer {
+    justify-content: center;
+    padding: 30px;
+  }
+
+  .ImageContainer > div {
+    flex: 0 50%;
+    box-sizing: border-box;
+  }
+}
+@media (min-width: 751px) {
+  .ImageContainer {
+    margin: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-content: center;
+    align-items: stretch;
+  }
+  .ImageContainer > div {
+    flex: 0 33%;
+    box-sizing: border-box;
+  }
+  .Img {
+    height: 250px;
+  }
+}
+.Img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

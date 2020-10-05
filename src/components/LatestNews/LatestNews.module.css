@@ -1,0 +1,172 @@
+.LatestNews {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-height: 300px;
+}
+
+.LatestNews h1 {
+  font-size: 23px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 1.3rem;
+  margin-top: 3rem !important;
+  margin-bottom: 1rem !important;
+}
+
+@media (max-width: 950px) {
+  .LatestNews {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-top: 1px solid #fff;
+  }
+
+  .Divs {
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .PostBox {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .PostBoxInfo {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 61%,
+      rgba(0, 4, 4, 0.3) 90%
+    );
+    height: 80px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 20px;
+  }
+  .PostBoxInfo > * {
+    font-size: x-large;
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 0;
+  }
+  .PostBoxInfo h3 {
+    font-weight: 500;
+  }
+
+  .Divs img {
+    z-index: 1;
+    height: 80%;
+    width: 100%;
+    transform: scale(1.4);
+  }
+
+  .Over {
+    /* background-color: rgba(13, 82, 82, 0.516); */
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    position: absolute;
+  }
+
+  .Over:hover {
+    background-color: rgba(0, 0, 0, 0.42);
+  }
+}
+
+.LatestNews h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 29px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  letter-spacing: 1.7rem;
+}
+
+@media (min-width: 951px) {
+  .News {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .News > div {
+    flex: 0 33%;
+    height: 600px;
+    box-sizing: border-box;
+  }
+  .Divs img {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+  }
+
+  .Divs {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    /*
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+    */
+    position: relative;
+    overflow: hidden;
+  }
+  .Over {
+    /* background-color: rgba(13, 82, 82, 0.516); */
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    position: absolute;
+  }
+
+  .Over:hover {
+    background-color: rgba(0, 0, 0, 0.42);
+  }
+  .PostBox {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .PostBoxInfo {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 61%,
+      rgba(0, 4, 4, 0.3) 90%
+    );
+    height: 80px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 20px;
+  }
+  .PostBoxInfo > * {
+    font-size: x-large;
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 0;
+  }
+  .PostBoxInfo h3 {
+    font-weight: 500;
+  }
+}
