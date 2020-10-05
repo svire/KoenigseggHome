@@ -9,6 +9,6 @@
 
 ![](priprema/paint/sldiein.gif)
 
-![](priprema/paint/latestnews.png)
+![](priprema/paint/lastestnews.png)
 
 ![](priprema/paint/ig.png)
