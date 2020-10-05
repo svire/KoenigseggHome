@@ -7,7 +7,7 @@
 
 ![](priprema/paint/sidedrawer.png)
 
-![](priprema/paint/sldiein.gif)
+![](priprema/paint/slidein.gif)
 
 ![](priprema/paint/lastestnews.png)
 
